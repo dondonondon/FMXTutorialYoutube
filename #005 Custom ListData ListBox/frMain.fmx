@@ -1,0 +1,102 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 720
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lbData: TListBox
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.Y = 40.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 680.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    AlternatingRowBackground = True
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 356.000000000000000000
+    Viewport.Height = 635.000000000000000000
+    object SearchBox1: TSearchBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Size.Width = 356.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object loCustomData: TLayout
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = 'Nama :'
+      TabOrder = 1
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = 'Kelas :'
+      TabOrder = 0
+    end
+    object lblKelas: TLabel
+      Position.X = 64.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '-'
+      TabOrder = 2
+    end
+    object lblNama: TLabel
+      StyleName = 'lblNama'
+      Position.X = 64.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '-'
+      TabOrder = 3
+    end
+    object img: TImage
+      StyleName = 'imgContoh'
+      MultiResBitmap = <
+        item
+        end>
+      Anchors = [akRight]
+      Position.X = 288.000000000000000000
+      Position.Y = 12.000000000000000000
+      OnClick = imgClick
+    end
+  end
+  object CornerButton1: TCornerButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    TabOrder = 2
+    Text = 'Load Data'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = CornerButton1Click
+  end
+end

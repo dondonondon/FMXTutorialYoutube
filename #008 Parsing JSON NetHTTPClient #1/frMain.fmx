@@ -1,0 +1,201 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 691
+  ClientWidth = 1098
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Contents
+    Size.Width = 1098.000000000000000000
+    Size.Height = 691.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      1098s
+      665s
+      1098s
+      665s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 92.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Normal JSON'
+      object btnLoadJSON: TCornerButton
+        Position.X = 8.000000000000000000
+        Position.Y = 22.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 217.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Load Data'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnLoadJSONClick
+      end
+      object memJSON: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ReadOnly = True
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 585.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 341.000000000000000000
+        Viewport.Height = 581.000000000000000000
+      end
+      object stgJSON: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 360.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 729.000000000000000000
+        Size.Height = 585.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+        Viewport.Width = 709.000000000000000000
+        Viewport.Height = 560.000000000000000000
+        object StringColumn1: TStringColumn
+          Header = 'DATE'
+        end
+        object StringColumn2: TStringColumn
+          Header = 'OPEN'
+        end
+        object StringColumn3: TStringColumn
+          Header = 'LOW'
+        end
+        object StringColumn4: TStringColumn
+          Header = 'HIGH'
+        end
+        object StringColumn5: TStringColumn
+          Header = 'CLOSE'
+        end
+        object StringColumn6: TStringColumn
+          Header = 'VOLUME'
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 90.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Nested JSON'
+      object btnLoadNestedJson: TCornerButton
+        Position.X = 8.000000000000000000
+        Position.Y = 14.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 217.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Load Data'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnLoadNestedJsonClick
+      end
+      object memNestedJSON: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ReadOnly = True
+        Position.X = 8.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 585.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 341.000000000000000000
+        Viewport.Height = 581.000000000000000000
+      end
+      object stgNestedJSON: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 360.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 729.000000000000000000
+        Size.Height = 537.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+        Viewport.Width = 709.000000000000000000
+        Viewport.Height = 512.000000000000000000
+        object StringColumn7: TStringColumn
+          Header = 'DATE'
+        end
+        object StringColumn8: TStringColumn
+          Header = 'OPEN'
+        end
+        object StringColumn9: TStringColumn
+          Header = 'LOW'
+        end
+        object StringColumn10: TStringColumn
+          Header = 'HIGH'
+        end
+        object StringColumn11: TStringColumn
+          Header = 'CLOSE'
+        end
+        object StringColumn12: TStringColumn
+          Header = 'VOLUME'
+        end
+      end
+      object Label1: TLabel
+        Position.X = 360.000000000000000000
+        Position.Y = 54.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = 'Nama : '
+        TabOrder = 6
+      end
+      object Label2: TLabel
+        Position.X = 360.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = 'Alias : '
+        TabOrder = 5
+      end
+      object lblAlias: TLabel
+        Position.X = 424.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 500.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = '[Alias]'
+        TabOrder = 3
+      end
+      object lblNama: TLabel
+        Position.X = 424.000000000000000000
+        Position.Y = 54.000000000000000000
+        Size.Width = 500.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = '[Nama]'
+        TabOrder = 4
+      end
+    end
+  end
+end

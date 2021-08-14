@@ -1,0 +1,324 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  Caption = 'Main Form'
+  ClientHeight = 720
+  ClientWidth = 462
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object loMain: TLayout
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Size.Width = 462.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tcMain: TTabControl
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Size.Width = 462.000000000000000000
+      Size.Height = 720.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = None
+      Sizes = (
+        462s
+        720s
+        462s
+        720s)
+      object tiData: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tiData'
+        object lbMain: TListBox
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Size.Width = 462.000000000000000000
+          Size.Height = 720.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          AlternatingRowBackground = True
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          OnItemClick = lbMainItemClick
+          Viewport.Width = 458.000000000000000000
+          Viewport.Height = 683.000000000000000000
+          object SearchBox1: TSearchBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Size.Width = 458.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object btnTambahData: TCornerButton
+          Anchors = [akRight, akBottom]
+          Position.X = 366.000000000000000000
+          Position.Y = 680.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 89.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Tambah Data'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnTambahDataClick
+        end
+        object pbLoad: TProgressBar
+          Orientation = Horizontal
+          Position.X = 16.000000000000000000
+          Position.Y = 616.000000000000000000
+          Size.Width = 433.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          object lblProgres: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 433.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 12.500000000000000000
+            TextSettings.HorzAlign = Center
+            Text = '0/0'
+            TabOrder = 0
+          end
+        end
+      end
+      object tiProsesData: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tiProsesData'
+        object btnKembali: TCornerButton
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 80.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Kembali'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnKembaliClick
+        end
+        object edNama: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 5
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 447.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label4: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 8.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 447.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Nama'
+          TabOrder = 6
+        end
+        object edKelas: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 3
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 7.000000000000000000
+          Position.Y = 168.000000000000000000
+          Size.Width = 447.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label5: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 7.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 447.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Kelas'
+          TabOrder = 4
+        end
+        object edHobi: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 1
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 7.000000000000000000
+          Position.Y = 248.000000000000000000
+          Size.Width = 447.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label6: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 7.000000000000000000
+          Position.Y = 224.000000000000000000
+          Size.Width = 447.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Hobi'
+          TabOrder = 2
+        end
+        object btnProses: TCornerButton
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 8.000000000000000000
+          Position.Y = 336.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 448.000000000000000000
+          Size.Height = 57.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'Proses'
+          TextSettings.Font.Size = 12.500000000000000000
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnProsesClick
+        end
+        object btnHapus: TCornerButton
+          Anchors = [akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 375.000000000000000000
+          Position.Y = 8.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          TabOrder = 8
+          Text = 'Hapus Data'
+          TextSettings.Font.Size = 12.500000000000000000
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnHapusClick
+        end
+      end
+    end
+  end
+  object loTemp: TLayout
+    Position.X = 16.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
+    object Label1: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = 'Nama :'
+      TabOrder = 2
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = 'Kelas :'
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = 'Hobi :'
+      TabOrder = 0
+    end
+    object lblTempNama: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 80.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 230.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      Text = 'lblTempNama'
+      TabOrder = 5
+    end
+    object lblTempKelas: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 80.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 230.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      Text = 'lblTempKelas'
+      TabOrder = 4
+    end
+    object lblTempHobi: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 80.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 230.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      Text = 'lblTempHobi'
+      TabOrder = 3
+    end
+  end
+  object CornerButton1: TCornerButton
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    Size.Width = 193.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'CornerButton1'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = CornerButton1Click
+  end
+  object QData: TFDQuery
+    Connection = DM.Conn
+    Left = 592
+    Top = 8
+  end
+end
