@@ -1,0 +1,175 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 720
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lbData: TListBox
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.Y = 80.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    AlternatingRowBackground = True
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 356.000000000000000000
+    Viewport.Height = 595.000000000000000000
+    object SearchBox1: TSearchBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Size.Width = 356.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object loCustomData: TLayout
+    Position.X = 8.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Position.X = 56.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = 'Nama :'
+      TabOrder = 1
+    end
+    object Label2: TLabel
+      Position.X = 56.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = 'Kelas :'
+      TabOrder = 0
+    end
+    object lblKelas: TLabel
+      Position.X = 112.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '-'
+      TabOrder = 2
+    end
+    object lblNama: TLabel
+      StyleName = 'lblNama'
+      Position.X = 112.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '-'
+      TabOrder = 3
+    end
+    object img: TImage
+      StyleName = 'imgContoh'
+      MultiResBitmap = <
+        item
+        end>
+      Anchors = [akRight]
+      Position.X = 8.000000000000000000
+      Position.Y = 12.000000000000000000
+      OnClick = imgClick
+    end
+    object lblJumlah: TLabel
+      StyleName = 'lblJumlah'
+      Anchors = [akRight]
+      Position.X = 264.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = '0'
+      TabOrder = 4
+    end
+    object btnTambah: TCornerButton
+      Tag = 1
+      StyleName = 'btnTambah'
+      Anchors = [akRight]
+      Position.X = 304.000000000000000000
+      Position.Y = 40.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 32.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = '+'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+    end
+    object btnKurang: TCornerButton
+      Tag = -1
+      StyleName = 'btnKurang'
+      Anchors = [akRight]
+      Position.X = 264.000000000000000000
+      Position.Y = 40.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 32.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = '-'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+    end
+  end
+  object CornerButton1: TCornerButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    TabOrder = 2
+    Text = 'Load Data'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = CornerButton1Click
+  end
+  object CornerButton2: TCornerButton
+    Position.X = 264.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    Size.Width = 88.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Tambah Data'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = CornerButton2Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 168.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 168.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
