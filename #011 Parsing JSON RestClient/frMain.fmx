@@ -1,0 +1,105 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 744
+  ClientWidth = 1116
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnLoad: TCornerButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    Size.Width = 145.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Load Data'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = btnLoadClick
+  end
+  object stgData: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 1097.000000000000000000
+    Size.Height = 393.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnCellClick = stgDataCellClick
+    Viewport.Width = 1093.000000000000000000
+    Viewport.Height = 368.000000000000000000
+  end
+  object stgSubData: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 456.000000000000000000
+    Size.Width = 1097.000000000000000000
+    Size.Height = 281.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 1093.000000000000000000
+    Viewport.Height = 256.000000000000000000
+  end
+  object edKeyword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 168.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 937.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object RClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    Params = <>
+    Left = 280
+    Top = 72
+  end
+  object RReq: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'keyword'
+        Value = 'bbca'
+      end>
+    Response = RResp
+    Left = 352
+    Top = 72
+  end
+  object RResp: TRESTResponse
+    Left = 416
+    Top = 72
+  end
+  object RRespAdapter: TRESTResponseDataSetAdapter
+    Dataset = memData
+    FieldDefs = <>
+    Response = RResp
+    TypesMode = Rich
+    Left = 480
+    Top = 72
+  end
+  object memData: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 552
+    Top = 72
+  end
+end
