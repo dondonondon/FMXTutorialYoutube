@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "8a0b1591-63af-4be0-9069-8e48d84440a7",
+		"name": "Youtube Biodata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insertItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "apiapi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tbl",
+							"value": "tb_siswa",
+							"type": "text"
+						},
+						{
+							"key": "kol",
+							"value": "nip, nama, kelas, alamat, notelp, hobi",
+							"type": "text"
+						},
+						{
+							"key": "val",
+							"value": "'00001','Fajar Donny Bachtiar','VI','Sleman','089683339333','Basket'",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/appru/API/APITemplate/APITemplate.php?act=insertItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"appru",
+						"API",
+						"APITemplate",
+						"APITemplate.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "insertItem"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDataGroupKelas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "apiapi",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tbl",
+							"value": "tb_siswa",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "kol",
+							"value": "nip, nama, kelas, alamat, notelp, hobi",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "val",
+							"value": "'00001','Fajar Donny Bachtiar','VI','Sleman','089683339333','Basket'",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/appru/API/APITemplate/APITemplate.php?act=getDataGroupKelas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"appru",
+						"API",
+						"APITemplate",
+						"APITemplate.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "getDataGroupKelas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertItemIsNull",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "apiapi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tbl",
+							"value": "tb_siswa",
+							"type": "text"
+						},
+						{
+							"key": "kol",
+							"value": "nip, nama, kelas, alamat, notelp, hobi",
+							"type": "text"
+						},
+						{
+							"key": "val",
+							"value": "'00001','Fajar Donny Bachtiar','VI','Sleman','089683339333','Basket'",
+							"type": "text"
+						},
+						{
+							"key": "isWhere",
+							"value": "nama = 'Fajar Donny Bachtiar' AND kelas = 'VI' AND nip = '00001'",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/appru/API/APITemplate/APITemplate.php?act=insertItemIsNull",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"appru",
+						"API",
+						"APITemplate",
+						"APITemplate.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "insertItemIsNull"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "apiapi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tbl",
+							"value": "tb_siswa",
+							"type": "text"
+						},
+						{
+							"key": "val",
+							"value": "hobi = 'Sepak Bola'",
+							"type": "text"
+						},
+						{
+							"key": "isWhere",
+							"value": "id_siswa = 2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/appru/API/APITemplate/APITemplate.php?act=updateItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"appru",
+						"API",
+						"APITemplate",
+						"APITemplate.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "updateItem"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "apiapi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tbl",
+							"value": "tb_siswa",
+							"type": "text"
+						},
+						{
+							"key": "val",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "isWhere",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "order",
+							"value": "ORDER BY cdt DESC",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/appru/API/APITemplate/APITemplate.php?act=getData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"appru",
+						"API",
+						"APITemplate",
+						"APITemplate.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "getData"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteItemWhere",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "apiapi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "isWhere",
+							"value": "id_siswa = 5",
+							"type": "text"
+						},
+						{
+							"key": "tbl",
+							"value": "tb_siswa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/appru/API/APITemplate/APITemplate.php?act=deleteItemWhere",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"appru",
+						"API",
+						"APITemplate",
+						"APITemplate.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "deleteItemWhere"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "apiapi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fileToUpload",
+							"type": "file",
+							"src": "/C:/Users/LENOVO/Pictures/a.jpg"
+						},
+						{
+							"key": "nmFile",
+							"value": "contoh.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/appru/API/APITemplate/APITemplate.php?act=uploadFiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"appru",
+						"API",
+						"APITemplate",
+						"APITemplate.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "uploadFiles"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

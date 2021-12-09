@@ -1,0 +1,310 @@
+object FProses: TFProses
+  Size.Width = 384.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object background: TRectangle
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Fill.Color = claWhite
+    Size.Width = 384.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object loMain: TLayout
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Size.Width = 384.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lbMain: TListBox
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Position.Y = 64.000000000000000000
+      Size.Width = 385.000000000000000000
+      Size.Height = 657.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 2
+      ShowScrollBars = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 385.000000000000000000
+      Viewport.Height = 657.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        Selectable = False
+        Size.Width = 385.000000000000000000
+        Size.Height = 649.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object edHobi: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          StyleLookup = 'edMain'
+          TabOrder = 9
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 24.000000000000000000
+          Position.Y = 465.000000000000000000
+          Size.Width = 337.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object edKelas: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          StyleLookup = 'edMain'
+          TabOrder = 8
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 24.000000000000000000
+          Position.Y = 192.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object edNama: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          StyleLookup = 'edMain'
+          TabOrder = 7
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 24.000000000000000000
+          Position.Y = 112.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object edNIP: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          StyleLookup = 'edMain'
+          TabOrder = 39
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 24.000000000000000000
+          Position.Y = 32.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object edNotelp: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          StyleLookup = 'edMain'
+          TabOrder = 6
+          TextSettings.Font.Size = 12.500000000000000000
+          Position.X = 24.000000000000000000
+          Position.Y = 384.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label1: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'NIP'
+          TabOrder = 40
+        end
+        object Label2: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Nama'
+          TabOrder = 5
+        end
+        object Label3: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 168.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Kelas'
+          TabOrder = 4
+        end
+        object Label4: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 248.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Alamat'
+          TabOrder = 3
+        end
+        object Label5: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 360.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Nomor Telepon'
+          TabOrder = 2
+        end
+        object Label6: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 440.000000000000000000
+          Size.Width = 338.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Hobi'
+          TabOrder = 1
+        end
+        object memAlamat: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          StyledSettings = [Family, Style, FontColor]
+          TextSettings.Font.Size = 12.500000000000000000
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 24.000000000000000000
+          Position.Y = 272.000000000000000000
+          Size.Width = 337.000000000000000000
+          Size.Height = 73.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'memMain'
+          TabOrder = 41
+          Viewport.Width = 337.000000000000000000
+          Viewport.Height = 73.000000000000000000
+        end
+        object CornerButton1: TCornerButton
+          StyledSettings = [Family, Style]
+          Position.X = 24.000000000000000000
+          Position.Y = 520.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 97.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'btnMain'
+          TabOrder = 42
+          Text = 'Pilih Gambar'
+          TextSettings.Font.Size = 12.500000000000000000
+          TextSettings.FontColor = claWhite
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = CornerButton1Click
+        end
+        object img: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 128.000000000000000000
+          Position.Y = 520.000000000000000000
+          Size.Width = 233.000000000000000000
+          Size.Height = 121.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object ListBoxItem2: TListBoxItem
+        Selectable = False
+        Position.Y = 649.000000000000000000
+        Size.Width = 385.000000000000000000
+        Size.Height = 72.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnProses: TCornerButton
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 24.000000000000000000
+          Position.Y = 7.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 337.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'btnMain'
+          TabOrder = 39
+          Text = 'Proses'
+          TextSettings.Font.Size = 12.500000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnProsesClick
+        end
+      end
+    end
+    object reHeader: TRectangle
+      Anchors = [akLeft, akTop, akRight]
+      Fill.Color = claWhite
+      Sides = [Bottom]
+      Size.Width = 385.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFEDEDED
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.150000005960464500
+        ShadowColor = claBlack
+      end
+    end
+    object btnBack: TCornerButton
+      Images = DM.img
+      ImageIndex = 2
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnImage'
+      TabOrder = 0
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnBackClick
+    end
+    object btnDelete: TCornerButton
+      Anchors = [akTop, akRight]
+      Images = DM.img
+      ImageIndex = 6
+      Position.X = 328.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnImage'
+      TabOrder = 1
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnDeleteClick
+    end
+    object OD: TOpenDialog
+      Left = 280
+      Top = 16
+    end
+  end
+  object AL: TActionList
+    Left = 224
+    Top = 16
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+  end
+end
