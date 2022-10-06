@@ -1,0 +1,775 @@
+object TStyleContainer
+  object TLayout
+    StyleName = 'btnGreen'
+    Align = Center
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 76
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = xFF4BC961
+      Locked = True
+      HitTest = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'btnImg'
+    Align = Center
+    Size.Width = 80.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 7
+    object TRectangle
+      StyleName = 'background'
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Fill.Color = claWhite
+      Locked = True
+      HitTest = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Align = Client
+      Size.Width = 76.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'edMain'
+    Align = Center
+    Size.Width = 286.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 14
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = claWhite
+      Locked = True
+      HitTest = False
+      Size.Width = 286.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFEDEDED
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      object TColorAnimation
+        StyleName = 'caBackground'
+        Duration = 0.200000002980232200
+        PropertyName = 'Stroke.Color'
+        StartValue = xFFEDEDED
+        StopValue = xFF1E1F58
+        Trigger = 'IsFocused=true'
+        TriggerInverse = 'IsFocused=false'
+      end
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 218.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 234.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F2A96FF
+    end
+    object TFontObject
+      StyleName = 'font'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit1Style1LabelStyle1'
+      Visible = False
+    end
+  end
+  object TLayout
+    StyleName = 'edLogin'
+    Align = Center
+    Size.Width = 286.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 13
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = claWhite
+      Locked = True
+      HitTest = False
+      Size.Width = 286.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object TColorAnimation
+        StyleName = 'caBackground'
+        Duration = 0.200000002980232200
+        PropertyName = 'Stroke.Color'
+        StartValue = xFFEDEDED
+        StopValue = xFF0D4A85
+        Trigger = 'IsFocused=true'
+        TriggerInverse = 'IsFocused=false'
+      end
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 218.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 234.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F2A96FF
+    end
+    object TFontObject
+      StyleName = 'font'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit1Style1LabelStyle1'
+      Visible = False
+    end
+  end
+  object TLayout
+    StyleName = 'btnRed'
+    Align = Center
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 89
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = xFFFF6969
+      Locked = True
+      HitTest = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Position.X = 2.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Text'
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'btnGray'
+    Align = Center
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 88
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = xFFBCBFC2
+      Locked = True
+      HitTest = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Position.X = 2.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'btnWhite'
+    Align = Center
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 87
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = claWhite
+      Locked = True
+      HitTest = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Position.X = 2.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = xFF393939
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'btnSideBar'
+    Align = Center
+    Size.Width = 217.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 93
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = claWhite
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFF0F0F0
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFD4D4D4
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      HitTest = False
+      Size.Width = 217.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFD4D4D4
+      Visible = False
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = MostLeft
+      Size.Width = 24.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 207.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'edSearch'
+    Align = Center
+    Size.Width = 100.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 12
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = claWhite
+      Locked = True
+      HitTest = False
+      Size.Width = 100.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 55.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 0.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F2A96FF
+    end
+    object TFontObject
+      StyleName = 'font'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit1Style1LabelStyle1'
+      Visible = False
+    end
+    object TImage
+      StyleName = 'icon'
+      MultiResBitmap.Height = 96
+      MultiResBitmap.Width = 96
+      MultiResBitmap = <
+        item
+          Width = 96
+          Height = 96
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+            38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            075249444154785EED9CBF521B4910C6015120888885A8E2B2CB0E078050229C
+            39B3C92E33447799B927009EC0F6131C7E029BF02243843081F113585421EA42
+            2E4212FFEEFB44EB8A92819D9E9DD91D71F3ABDA9AD995EFD8ED6FBAA7677666
+            87229148241289442291C8FF8E612973677E7E7E6E6464A48663F6FAFA7A16E5
+            9CFC342B658FC6CDCDCD198E06FE4D03E77BF8F747070707AC0F1CB90950ABD5
+            A65AADD66B549779C09853DD1FECA130BB383E408C5DB9163C990BB0B8B84883
+            BFC1E1C2E80FD113632B74CFC84C001A1E06DF409502640644D80E5908EF02E4
+            65F87E4215C29B008CF11717179B7868869B50685C5D5DBDFFF2E5CB3B39CF1D
+            2F0248ABFF13D5FE0C2614769139AD85E00D23523A6369696913C6FF8C6AA8C6
+            276C209F99FACA796E14A474028CBF8D22A490F3185310E1F752A9F44FB3D9AC
+            CBB5CC712680189F79FD4001115ECCCCCC0C9F9C9CE432767022C0A01AFF0ECB
+            7989905A806AB5CA8CE2B7DBB38166B95C2E3720C23739CF845459103B5C14CC
+            F19D81ECE40CC52E424303F5C6F0F0F019EABCC6DFA690D63276CFA29CC36F4E
+            C716FCDB389E1F1E1E1EC925EF580B20A926B39DD4F0C1614C7AD26EBD5EDFBB
+            BD9A8C8C356A10E3154E576FAFA6A6313636F66C6F6FAF2BBA6FAC0480F1395B
+            E922D5E49CCDE6F8F8F84EDA07967BA237BA10627B7F7F7F4DEA5EB11200A187
+            83AC540F2A867FEFBAA5B91282A1288B5955B5001CBC8C8E8E7E95531B1A9797
+            972BBEE36CA5525947587B2BA73664128AD4236118FFA354D5A0D51FF1A1B2E8
+            E4D097BC83D0CF50B59D6E986DB7DBDE07952A01E0DE746BABB84FE323E43CCF
+            AA7323149AA104552B1170CFEBECE8E5D40B2A0124B6AAC9C3F83D38E1461198
+            69C92563F0BC53BEBDC05800A69D286C5A3F339D953C8CDF43663D576ECF74F8
+            F6026301D01AACA61A249BC87DDA97190D8CF9879C1A432F383F3FAFC9A9738C
+            04606A87429DD6E1813743307E0F76CC28D4A965A1505897AA734C3DC066C8DF
+            C0036F493D18E09136F7B4EC2B0C990AF0524A63D8FAA51A140C4528D45E80CE
+            586D03137C79005BFF07A90787AD1748E9944401AAD52A57ACA9DC0FAD3FF379
+            750DE205AABEC9F5CC6B8F4401AEAEAE6C3200BEA0091A3412ED3DCEFAE80712
+            0540EB57E5FE1CF068A694F30202A8EFD1473A6AD207A8560EC055337B999186
+            62B1A8BE4F3C5BDAE9F71F4814002D45E5768322808CCCB5FD40F62108026843
+            5030032F03B4F79ABD07683320B492DCE67CB4A071E5DE584CFA002D83E4012A
+            B4E1D8041F023877D3A78C0F0106068B04C3797835114015527CB8A92FB4FD9B
+            0F1205804155AAA395E4BEE2D814646CDA7B75DEBF9908A0F580811080D30A16
+            1E90BD00B849ED1FF53267E29A4EA763F58E434A67240A0037552D5665AB6AB5
+            5A83E005EAF9FDF1F171E70B774D3A619BA9E541D8A4A1F20034C4231F0B0B12
+            059077BA5AD7F3F60ACF0536EB9B7CCD71997800F924A5110C4359AC2AB305F7
+            A75EDF040F50D9C0142301F0C777A46A0CB2A175594D1114B6ABFB262626BCBC
+            E3301280AFF020822AFED10B7070157530B041D8B47E34A66D5F0BCB4C431063
+            A0CDE6E6E58585056F6B6A2CE06A691BAFF4F68AD55800AEE597AA8A42A1F036
+            84FDB8DC4E85D6CF9D345AB8C2C3DB2B566301E882B61D1197B4E7D91FA4D9CB
+            86F0E3757D93B1000402D8AE74EB6E69CA4384941B09BDAF6F5209201B2B6CE3
+            218DFF152278595F731F697771FA6EFD44BD458903AC56ABF59D598E5CB2616B
+            7F7FDFDBC3F11E3B9D0E77F2588BCD708BECCF6A49BB06F546EDE3E3E3D6CCCC
+            4C1B59D10BB9640377A6AF4E4F4FEF349B4DA7E91DF7865D5E5E7EC4FDFD2C97
+            D448CABDE2FADEEEC37A9F30DC9BDB54538713E6D838527DE74DBCF2158CFE06
+            47EA8C8B02E0C864C3B6B50032A871F9591ACE377DC283EF98882161860DA086
+            FF66356548FC81AC44B01680B04315119C03AF38426BEE7E9E522EF5E0270A68
+            6CEF19551622A412804004B6BEA0A61C5CE25B84D45F4B414775542E97395591
+            597A992578AE228A5F4BA5D25FA7A7A77FDF5E758793EF059D9C9CEC4511EC70
+            2200A108482B8F11B397E5869F14BE4448DD07F4E3213B0A0AD77D826A2AC204
+            BEC2E40DA21AE42E1931A0F5008BE92E1B98AB195EE71E7017C9903817138437
+            203C72B3F61A04E81A91C6949FD48890A93DC1AB003D2A95CA0662A8F5873E1C
+            C0CF25ACDE9DD797CFE5E72E42260210F60D10E175C64274BFC8F5D094720822
+            6426C05D189A440CE7692B0D82FF2F8D41C327BEC9CA5B845C04E841AF404111
+            5EC200ECD46C3DA33B8F84D6CECFE2A8BF3F97A708B90AD00F27D8DAEDF62F30
+            64FF7C0FCBBB7342ACF34BE8DF2627271B2E562CE425425002E44D1E224401FA
+            C85A8428C03DB812A1582CFE94141E9D8F849F026CB96CC134A25C5243F14CD6
+            C746011EC0850832E6799428C02338102131AD8E0224E0C2131E230A6080AD08
+            18CF242E2E880218622942E2947C4C439598A6A89C16A9D7EBFC76F5A3440F50
+            D2F30454FB97CBFC07430F3FD52CA78F123DC01279F5BA0131E811730C4D320B
+            BBED7B457524128944229148241219648686FE05B8ECFD2173048EDA00000000
+            49454E44AE426082}
+          FileName = 
+            'D:\Job\Tutorial\Youtube Live\001 - Design\assets\icons\fa_search' +
+            '.png'
+        end>
+      Align = MostLeft
+      Margins.Left = 18.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 18.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 24.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object TLayout
+    StyleName = 'edSearchMenu'
+    Align = Center
+    Size.Width = 100.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 11
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = claWhite
+      Locked = True
+      HitTest = False
+      Size.Width = 100.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 112.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 0.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F2A96FF
+    end
+    object TFontObject
+      StyleName = 'font'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit1Style1LabelStyle1'
+      Visible = False
+    end
+  end
+  object TLayout
+    StyleName = 'btnMain'
+    Align = Center
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 86
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Color = xFF047CF7
+      Locked = True
+      HitTest = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TInnerGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Position.X = 2.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Text'
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = False
+    end
+  end
+end
