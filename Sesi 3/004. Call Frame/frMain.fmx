@@ -1,0 +1,21 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  Caption = 'Main Form'
+  ClientHeight = 720
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object loFrame: TLayout
+    Align = Contents
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+end

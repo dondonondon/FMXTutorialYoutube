@@ -1,0 +1,13 @@
+object FLoading: TFLoading
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object Label1: TLabel
+    Align = Center
+    HitTest = True
+    TextSettings.HorzAlign = Center
+    Text = 'Loading'
+    TabOrder = 0
+    OnClick = Label1Click
+  end
+end

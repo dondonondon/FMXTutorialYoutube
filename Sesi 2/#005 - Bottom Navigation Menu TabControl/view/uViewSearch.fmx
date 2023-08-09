@@ -1,0 +1,21 @@
+object FSearch: TFSearch
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Label1: TLabel
+    Align = Center
+    TextSettings.HorzAlign = Center
+    Text = 'Frame Search'
+    TabOrder = 0
+  end
+  object CornerButton1: TCornerButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    TabOrder = 1
+    Text = 'SEARCH'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = CornerButton1Click
+  end
+end

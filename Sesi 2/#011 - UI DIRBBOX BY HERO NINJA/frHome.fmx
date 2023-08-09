@@ -1,0 +1,1453 @@
+object FHome: TFHome
+  Left = 0
+  Top = 0
+  Caption = 'Main Form'
+  ClientHeight = 812
+  ClientWidth = 375
+  Fill.Kind = Solid
+  Quality = HighQuality
+  StyleBook = FMain.SB
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Line1: TLine
+    Anchors = [akLeft, akTop, akRight]
+    LineType = Bottom
+    Position.X = 30.000000000000000000
+    Position.Y = 204.000000000000000000
+    Size.Width = 315.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFEEF2FE
+  end
+  object Label1: TLabel
+    Anchors = [akLeft, akTop, akRight]
+    AutoSize = True
+    StyledSettings = [Family]
+    Position.X = 30.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 315.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = xFF22215B
+    Text = 'Your Dribbbox'
+    TabOrder = 0
+    object Glyph1: TGlyph
+      Align = Right
+      Position.X = 295.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      ImageIndex = 5
+      Images = FMain.imgList
+    end
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    StyleLookup = 'edSearch'
+    TabOrder = 1
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.FontColor = xFF22215B
+    Position.X = 32.000000000000000000
+    Position.Y = 116.000000000000000000
+    Size.Width = 315.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Search Folder'
+    StyledSettings = [Family, Style]
+  end
+  object Layout1: TLayout
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 30.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 315.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Glyph2: TGlyph
+      Position.X = 59.000000000000000000
+      Size.Width = 15.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      ImageIndex = 9
+      Images = FMain.imgList
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, Style]
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.FontColor = xFF22215B
+      Text = 'Recent'
+      TabOrder = 1
+    end
+    object Glyph3: TGlyph
+      Align = Right
+      Position.X = 300.000000000000000000
+      Size.Width = 15.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      ImageIndex = 7
+      Images = FMain.imgList
+    end
+    object Glyph4: TGlyph
+      Margins.Right = 8.000000000000000000
+      Align = Right
+      Position.X = 277.000000000000000000
+      Size.Width = 15.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      ImageIndex = 8
+      Images = FMain.imgList
+    end
+  end
+  object ListBox1: TListBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 30.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 315.000000000000000000
+    Size.Height = 581.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 4
+    ShowScrollBars = False
+    Columns = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 315.000000000000000000
+    Viewport.Height = 581.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      Selectable = False
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 15
+      object Layout2: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle1: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout3: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph5: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 13
+            Images = FMain.imgList
+          end
+          object Glyph6: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 14
+            Images = FMain.imgList
+          end
+        end
+        object Label3: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF415EB6
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label4: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF415EB6
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      object Layout4: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle2: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout5: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph7: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 11
+            Images = FMain.imgList
+          end
+          object Glyph8: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 16
+            Images = FMain.imgList
+          end
+        end
+        object Label5: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFAC4040
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label6: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFAC4040
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Selectable = False
+      Position.Y = 120.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 13
+      object Layout6: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle3: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout7: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph9: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 12
+            Images = FMain.imgList
+          end
+          object Glyph10: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 17
+            Images = FMain.imgList
+          end
+        end
+        object Label7: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFFFB110
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label8: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFFFB110
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem4: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      object Layout8: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle4: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout9: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph11: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 10
+            Images = FMain.imgList
+          end
+          object Glyph12: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 15
+            Images = FMain.imgList
+          end
+        end
+        object Label9: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label10: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem5: TListBoxItem
+      Selectable = False
+      Position.Y = 240.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 14
+      object Layout10: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle5: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout11: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph13: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 13
+            Images = FMain.imgList
+          end
+          object Glyph14: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 14
+            Images = FMain.imgList
+          end
+        end
+        object Label11: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF415EB6
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label12: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF415EB6
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem6: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      object Layout12: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle6: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout13: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph15: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 11
+            Images = FMain.imgList
+          end
+          object Glyph16: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 16
+            Images = FMain.imgList
+          end
+        end
+        object Label13: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFAC4040
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label14: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFAC4040
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem7: TListBoxItem
+      Selectable = False
+      Position.Y = 360.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      object Layout14: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle7: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout15: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph17: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 12
+            Images = FMain.imgList
+          end
+          object Glyph18: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 17
+            Images = FMain.imgList
+          end
+        end
+        object Label15: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFFFB110
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label16: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFFFB110
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem8: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Position.Y = 360.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Layout16: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle8: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout17: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph19: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 10
+            Images = FMain.imgList
+          end
+          object Glyph20: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 15
+            Images = FMain.imgList
+          end
+        end
+        object Label17: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label18: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem9: TListBoxItem
+      Selectable = False
+      Position.Y = 480.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      object Layout18: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle9: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout19: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph21: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 13
+            Images = FMain.imgList
+          end
+          object Glyph22: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 14
+            Images = FMain.imgList
+          end
+        end
+        object Label19: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF415EB6
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label20: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF415EB6
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem10: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Position.Y = 480.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object Layout20: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle10: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout21: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph23: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 11
+            Images = FMain.imgList
+          end
+          object Glyph24: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 16
+            Images = FMain.imgList
+          end
+        end
+        object Label21: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFAC4040
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label22: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFAC4040
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem11: TListBoxItem
+      Selectable = False
+      Position.Y = 600.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      object Layout22: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle11: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout23: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph25: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 12
+            Images = FMain.imgList
+          end
+          object Glyph26: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 17
+            Images = FMain.imgList
+          end
+        end
+        object Label23: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFFFB110
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label24: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFFFB110
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem12: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Position.Y = 600.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Layout24: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle12: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout25: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph27: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 10
+            Images = FMain.imgList
+          end
+          object Glyph28: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 15
+            Images = FMain.imgList
+          end
+        end
+        object Label25: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label26: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem13: TListBoxItem
+      Selectable = False
+      Position.Y = 720.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object Layout26: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle13: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout27: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph29: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 13
+            Images = FMain.imgList
+          end
+          object Glyph30: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 14
+            Images = FMain.imgList
+          end
+        end
+        object Label27: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF415EB6
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label28: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF415EB6
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem14: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Position.Y = 720.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Layout28: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle14: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout29: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph31: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 11
+            Images = FMain.imgList
+          end
+          object Glyph32: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 16
+            Images = FMain.imgList
+          end
+        end
+        object Label29: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFAC4040
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label30: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFAC4040
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem15: TListBoxItem
+      Selectable = False
+      Position.Y = 840.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object Layout30: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Right = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle15: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout31: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph33: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 12
+            Images = FMain.imgList
+          end
+          object Glyph34: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 17
+            Images = FMain.imgList
+          end
+        end
+        object Label31: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFFFB110
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label32: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFFFFB110
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+    object ListBoxItem16: TListBoxItem
+      Selectable = False
+      Position.X = 157.000000000000000000
+      Position.Y = 840.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout32: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Margins.Left = 13.000000000000000000
+        Position.X = 13.000000000000000000
+        Size.Width = 144.000000000000000000
+        Size.Height = 107.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        object Rectangle16: TRectangle
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Fill.Color = xFFEEF7FE
+          Size.Width = 144.000000000000000000
+          Size.Height = 107.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+        end
+        object Layout33: TLayout
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Glyph35: TGlyph
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 10
+            Images = FMain.imgList
+          end
+          object Glyph36: TGlyph
+            Margins.Top = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Align = Right
+            Position.X = 104.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 15
+            Images = FMain.imgList
+          end
+        end
+        object Label33: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family]
+          Position.X = 16.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'Mobile Apps'
+          TabOrder = 3
+        end
+        object Label34: TLabel
+          Anchors = [akLeft, akRight, akBottom]
+          StyledSettings = [Family, Style]
+          Position.X = 16.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.500000000000000000
+          TextSettings.FontColor = xFF23B0B0
+          Text = 'December 20.2020'
+          TabOrder = 2
+        end
+      end
+    end
+  end
+end

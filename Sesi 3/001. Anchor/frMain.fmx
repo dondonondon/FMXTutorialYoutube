@@ -1,0 +1,50 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  Caption = 'Main Form'
+  ClientHeight = 708
+  ClientWidth = 846
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 827.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle2: TRectangle
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 216.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 619.000000000000000000
+    Size.Height = 333.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle3: TRectangle
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle4: TRectangle
+    Anchors = [akLeft, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 436.000000000000000000
+    Size.Width = 827.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle5: TRectangle
+    Anchors = [akLeft, akTop, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 245.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

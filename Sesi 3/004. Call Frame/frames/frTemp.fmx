@@ -1,0 +1,5 @@
+object FTemp: TFTemp
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+end

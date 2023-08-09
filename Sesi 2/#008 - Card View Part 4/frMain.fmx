@@ -1,0 +1,322 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  Caption = 'Main Form'
+  ClientHeight = 720
+  ClientWidth = 360
+  Fill.Color = xFFEEF2F5
+  Fill.Kind = Solid
+  StyleBook = SB
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object loHeader: TLayout
+    Anchors = [akLeft, akTop, akRight]
+    Size.Width = 360.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object reHeader: TRectangle
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Fill.Color = xFF5886F4
+      Size.Width = 360.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object seHeader: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.250000000000000000
+      ShadowColor = claBlack
+    end
+    object Label1: TLabel
+      StyledSettings = [Family]
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 329.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'Card View Product'
+      TabOrder = 1
+    end
+    object CornerButton1: TCornerButton
+      Anchors = [akTop, akRight]
+      StyledSettings = [Family, Style]
+      Position.X = 272.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 80.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnCardKeranjang'
+      TabOrder = 2
+      Text = 'Refresh'
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.FontColor = claWhite
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = CornerButton1Click
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+  end
+  object lbProduct: TListBox
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.Y = 50.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 670.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    ShowScrollBars = False
+    OnViewportPositionChange = lbProductViewportPositionChange
+    Columns = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 360.000000000000000000
+    Viewport.Height = 670.000000000000000000
+  end
+  object loCard: TLayout
+    Position.X = 48.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object reCardBackground: TRectangle
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Fill.Color = claWhite
+      Size.Width = 169.000000000000000000
+      Size.Height = 305.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+    end
+    object reCardImage: TRectangle
+      StyleName = 'reCardImage'
+      Anchors = [akLeft, akTop, akRight]
+      Corners = [TopLeft, TopRight]
+      Fill.Bitmap.WrapMode = TileStretch
+      Fill.Kind = Bitmap
+      Size.Width = 169.000000000000000000
+      Size.Height = 169.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+    end
+    object seCard: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.250000000000000000
+      ShadowColor = claBlack
+    end
+    object lblCardNama: TLabel
+      StyleName = 'lblCardNama'
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      Text = 'lblCardNama'
+      TabOrder = 5
+    end
+    object lblCardHarga: TLabel
+      StyleName = 'lblCardHarga'
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      Text = 'lblCardHarga'
+      TabOrder = 4
+    end
+    object lblCardBrand: TLabel
+      StyleName = 'lblCardBrand'
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family, Style]
+      Position.X = 8.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.FontColor = xFF5C5C5C
+      Text = 'lblCardBrand'
+      TabOrder = 3
+    end
+    object lblCardStok: TLabel
+      StyleName = 'lblCardStok'
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family, Style]
+      Position.X = 8.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.FontColor = xFF5C5C5C
+      TextSettings.HorzAlign = Trailing
+      Text = 'lblCardStok'
+      TabOrder = 2
+    end
+    object btnCardKeranjang: TCornerButton
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [Family, Style]
+      Position.X = 8.000000000000000000
+      Position.Y = 260.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 153.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnCardKeranjang'
+      TabOrder = 6
+      Text = 'Tambah ke Keranjang'
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.FontColor = claWhite
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+    end
+  end
+  object aIndicator: TAniIndicator
+    Align = Center
+    Visible = False
+  end
+  object SB: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501061062746E436172644B6572616E6A616E67
+          037803005450463007544C61796F757400095374796C654E616D65061062746E
+          436172644B6572616E6A616E6705416C69676E070643656E7465720A53697A65
+          2E576964746805000000000000009906400B53697A652E486569676874050000
+          00000000009804401453697A652E506C6174666F726D44656661756C74080854
+          61624F72646572025B000A5452656374616E676C6500095374796C654E616D65
+          060A6261636B67726F756E6405416C69676E0708436F6E74656E74730A46696C
+          6C2E436F6C6F720709784646353838364634064C6F636B656409074869745465
+          7374080A53697A652E576964746805000000000000009906400B53697A652E48
+          656967687405000000000000009804401453697A652E506C6174666F726D4465
+          6661756C74080B5374726F6B652E4B696E6407044E6F6E65001054496E6E6572
+          476C6F774566666563740008536F66746E657373050000000000CDCCCCFD3F09
+          476C6F77436F6C6F720709784646344634383438074F70616369747905000000
+          00006666E6FE3F0754726967676572060E4973507265737365643D7472756507
+          456E61626C6564080000000654476C79706800095374796C654E616D65060A67
+          6C7970687374796C650C4D617267696E732E4C65667405000000000000008000
+          400B4D617267696E732E546F7005000000000000008001400D4D617267696E73
+          2E526967687405000000000000008000400E4D617267696E732E426F74746F6D
+          050000000000000080004005416C69676E07044C6566740A53697A652E576964
+          746805000000000000008003400B53697A652E48656967687405000000000000
+          008003401453697A652E506C6174666F726D44656661756C7408000005545465
+          787400095374796C654E616D6506047465787405416C69676E0706436C69656E
+          74064C6F636B6564090748697454657374080C4D617267696E732E4C65667405
+          00000000000000A001400B4D617267696E732E546F7005000000000000008000
+          400D4D617267696E732E52696768740500000000000000A001400E4D61726769
+          6E732E426F74746F6D05000000000000008000400A53697A652E576964746805
+          000000000000008F06400B53697A652E48656967687405000000000000008804
+          401453697A652E506C6174666F726D44656661756C7408045465787406045465
+          7874155465787453657474696E67732E576F72645772617008000000}
+      end
+      item
+        Platform = 'AndroidL Light'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501061062746E436172644B6572616E6A616E67
+          03A403005450463007544C61796F757400095374796C654E616D65061062746E
+          436172644B6572616E6A616E6705416C69676E070643656E7465720A53697A65
+          2E576964746805000000000000009906400B53697A652E486569676874050000
+          00000000009804401453697A652E506C6174666F726D44656661756C74080854
+          61624F72646572025B000A5452656374616E676C6500095374796C654E616D65
+          060A6261636B67726F756E6405416C69676E0708436F6E74656E74730A46696C
+          6C2E436F6C6F720709784646353838364634064C6F636B656409074869745465
+          7374080A53697A652E576964746805000000000000009906400B53697A652E48
+          656967687405000000000000009804401453697A652E506C6174666F726D4465
+          6661756C74080B5374726F6B652E4B696E6407044E6F6E65001054496E6E6572
+          476C6F774566666563740008536F66746E657373050000000000CDCCCCFD3F09
+          476C6F77436F6C6F720709784646344634383438074F70616369747905000000
+          00006666E6FE3F0754726967676572060E4973507265737365643D7472756507
+          456E61626C6564080000000654476C79706800095374796C654E616D65060A67
+          6C7970687374796C650C4D617267696E732E4C65667405000000000000008000
+          400B4D617267696E732E546F7005000000000000008001400D4D617267696E73
+          2E526967687405000000000000008000400E4D617267696E732E426F74746F6D
+          050000000000000080004005416C69676E07044C6566740A506F736974696F6E
+          2E5805000000000000008000400A506F736974696F6E2E590500000000000000
+          8001400A53697A652E576964746805000000000000008003400B53697A652E48
+          656967687405000000000000008004401453697A652E506C6174666F726D4465
+          6661756C7408000005545465787400095374796C654E616D6506047465787405
+          416C69676E0706436C69656E74064C6F636B6564090748697454657374080C4D
+          617267696E732E4C6566740500000000000000A001400B4D617267696E732E54
+          6F7005000000000000008000400D4D617267696E732E52696768740500000000
+          000000A001400E4D617267696E732E426F74746F6D0500000000000000800040
+          0A53697A652E57696474680500000000000000F605400B53697A652E48656967
+          687405000000000000008804401453697A652E506C6174666F726D4465666175
+          6C74080454657874060454657874155465787453657474696E67732E576F7264
+          5772617008000000}
+      end>
+    Left = 272
+    Top = 104
+  end
+  object RClient: TRESTClient
+    BaseURL = 'http://blangkon.net/JSON/product.json'
+    Params = <>
+    Left = 16
+    Top = 456
+  end
+  object RReq: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RClient
+    Params = <>
+    Response = RResp
+    Left = 72
+    Top = 456
+  end
+  object RResp: TRESTResponse
+    RootElement = 'data'
+    Left = 144
+    Top = 456
+  end
+  object RRDataAdapter: TRESTResponseDataSetAdapter
+    Dataset = QData
+    FieldDefs = <>
+    Response = RResp
+    TypesMode = Rich
+    Left = 208
+    Top = 456
+  end
+  object QData: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    Left = 16
+    Top = 536
+  end
+end

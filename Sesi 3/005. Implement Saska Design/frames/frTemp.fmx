@@ -1,0 +1,75 @@
+object FTemp: TFTemp
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object background: TRectangle
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Fill.Color = claWhite
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object loMain: TLayout
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Margins.Top = 57.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 663.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object loHeader: TLayout
+    Anchors = [akLeft, akTop, akRight]
+    Size.Width = 360.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object reHeader: TRectangle
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Corners = [BottomLeft, BottomRight]
+      Fill.Color = xFF26C2A3
+      Size.Width = 360.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+    end
+    object seHeader: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.150000005960464500
+      ShadowColor = claBlack
+    end
+    object btnBack: TCornerButton
+      Images = FMain.img
+      ImageIndex = 9
+      Position.X = 8.000000000000000000
+      Position.Y = 11.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 33.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnImg'
+      TabOrder = 1
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnBackClick
+    end
+    object lblTitle: TLabel
+      StyledSettings = [Family]
+      Position.X = 56.000000000000000000
+      Position.Y = 11.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'Product'
+      TabOrder = 2
+    end
+  end
+end
